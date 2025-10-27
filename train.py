@@ -178,12 +178,5 @@ if __name__ == '__main__':
             gen_img = gen_img.astype(np.uint8)
 
             plt.imshow(gen_img)
-            plt.savefig(f"output/ae_ckpt_val_{epoch}.png"
-                       
-                       
-                       
-                       
-                       
-                       
-                       )
+            plt.savefig(f"output/ae_ckpt_val_{epoch}.png")
             # plt.show()
