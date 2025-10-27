@@ -159,8 +159,8 @@ if __name__ == '__main__':
                     gen_img = gen_img[0].cpu().numpy() * 255
                     gen_img = gen_img.astype(np.uint8)
 
-                    # plt.imshow(gen_img)
-                    plt.savefig(f"output/ae_ckpt_%d_%.6f.png" % (epoch, total_loss))
+                    plt.imshow(gen_img)
+                    plt.savefig(f"output/ae_ckpt_{epoch}.png")
                     # plt.show()
 
         scheduler.step()
@@ -177,6 +177,13 @@ if __name__ == '__main__':
             gen_img = gen_img[0].cpu().numpy() * 255
             gen_img = gen_img.astype(np.uint8)
 
-            # plt.imshow(gen_img)
-            plt.savefig(f"output/ae_ckpt_%d_%.6f.png" % (epoch, total_loss))
+            plt.imshow(gen_img)
+            plt.savefig(f"output/ae_ckpt_val_{epoch}.png"
+                       
+                       
+                       
+                       
+                       
+                       
+                       )
             # plt.show()
