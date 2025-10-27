@@ -165,7 +165,8 @@ if __name__ == '__main__':
 
         scheduler.step()
 
-        torch.save(model.state_dict(), f"checkpoints/ae_ckpt_%d_%.6f.pth" % (epoch, loss.item()))
+        torch.save(model.state_dict(), f"../drive/MyDrive/checkpoints/ae_ckpt_%d_%.6f.pth" % (epoch, loss.item()))
+        # torch.save(model.state_dict(), f"checkpoints/ae_ckpt_%d_%.6f.pth" % (epoch, loss.item()))
 
         model.eval()
 
