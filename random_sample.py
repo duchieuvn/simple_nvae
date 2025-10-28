@@ -11,7 +11,7 @@ if __name__ == '__main__':
     model.apply(add_sn)
     model.to(device)
 
-    model.load_state_dict(torch.load("checkpoints/ae_ckpt_169_0.689621.pth", map_location=device), strict=False)
+    model.load_state_dict(torch.load("checkpoints/ae_ckpt_90_0.809145.pth", map_location=device), strict=False)
 
     model.eval()
 
@@ -24,5 +24,5 @@ if __name__ == '__main__':
             gen_img = gen_img.astype(np.uint8)
 
             plt.imshow(gen_img)
-            # plt.savefig(f"output/ae_ckpt_%d_%.6f.png" % (epoch, total_loss))
+            plt.savefig(f"output/random_sample.png")
             plt.show()
